@@ -1,6 +1,6 @@
 #!/bin/bash
 vim16_dir=~/.vim/bundle/base16-vim/colors
-script_dir=$(cd $(dirname ${BASH_SOURCE[0]}) && pwd)
+script_dir=$(cd $(dirname ${BASH_SOURCE[0]})/scripts && pwd)
 for script in $script_dir/base16*.sh; do
   script_name=$(basename $script .sh)
   variation=dark
